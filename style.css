@@ -1,0 +1,161 @@
+/* this is to add the font i want in our website*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/*this for reset of the defualt css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*this is for the main heading*/
+ h1{
+    font-size: 59px;
+    font-family: Satisfy,cursive;
+    color: #E89A9A;
+    text-align:center;
+    margin-top:65px;
+ }
+ /* this is for our statement */
+h4{
+    font-size: 22px;
+    color:#B97878;
+    text-align:center;
+    font-family: Satisfy,cursive;
+}
+/* this for the actual box*/
+.boxes{
+    display:flex;
+    justify-content:center;
+    gap: 60px;
+    margin-top: 100px;
+    flex-wrap:wrap;
+}
+/* this to make this box interactive and style it */
+.box{
+    width:210px;
+    min-height:185px;
+    background-color: #FFE9E5;
+    border-radius:50px;
+    text-align:center;
+    padding-top:60px;
+    border: 3px solid #EFA3A3;
+    font-family: Satisfy,cursive;
+    font-size:18px;
+    color: #B96F70;
+   box-shadow: 0 4px 10px rgba(90, 65, 65, 0.12);
+   transition: 0.3s;
+   position:relative;
+  
+}
+/* this is to move our box a bit upward */
+.box:hover{
+    transform: translateY(-5px);
+   
+}
+/* this is for the colour of h2 txt inside our box */
+h2{
+    color: #5A4141;
+    text-align:center;
+    font-size:35px;
+}
+/*this is to give our boxes scrapbook vibe and to tape the boxes */
+.tape {
+    width: 100px;
+    height: 22px;
+    background-color: rgba(255, 252, 250, 0.75);
+     position: absolute;
+    top: -10px;
+    left: 50px;
+    transform: rotate(-4deg);
+    border-radius:4px;
+}
+/* this for the camera emoji inside the cbox*/
+.camera {
+    font-size: 32px;
+}
+/* this is for the cbox style */
+.cbox {
+    width:62px;
+    height:52px;
+    background-color:#fdece9;
+    border-radius:4px;
+    box-shadow: 0 4px 10px rgba(90, 65, 65, 0.12);
+    top:20px;
+    left:20px;
+    border:3px solid #EFA3A3;
+    border-radius:20px;
+    position:absolute;
+    transition:0.7s;
+    transform: rotate(-12deg);
+    
+}
+.cbox:hover {
+    transform:translateY(-6px);
+}
+/* this is for the actual bg of the page */
+body {
+    background-color: #FFF3EE;
+}
+/* this for the style of h3 txt around here */
+h3{
+    color: #755656;
+    font-size:22px;
+    font-family:Satisfy,cursive;
+}
+/* this is for my 1st bg txt */
+.bgtxt1{
+    position: absolute;
+    top: 20%;
+    left: 87%;
+    color:#a57373;
+    font-family: Satisfy, cursive;
+    font-size: 14px;
+    transform:rotate(-8deg);
+    transition:0.5s;
+}
+.bgtxt1:hover{
+    transform:translateY(-6px);
+}
+/* this is for our 2nd bg txt */
+.bgtxt2{
+    position: absolute;
+    top: 82%;
+    left: 8%;
+    color:  #8a4b4b;
+    font-family: Satisfy, cursive;
+    font-size: 24px;
+    transform:rotate(+12deg);
+    transition:0.5s;
+}
+.bgtxt2:hover{
+    transform:translateY(-6px);
+}
+/* this for our pen emoji */
+.pen{
+    font-size:24px;
+    transition:0.5s;
+    position: absolute;
+    top: 77%;
+    left: 92%;
+    transform:rotate(-10deg);
+
+}
+/* this is to hover the pen when it is touched */
+.pen:hover{
+    transform:translateY(-6px);
+}
+/* this is for the txt below the pen */    
+.txtp{
+    font-size:16px;
+    transition:0.5s;
+    position: absolute;
+    top: 80%;
+    left: 82%;
+    transform:rotate(+15deg);
+    font-family:Satisfy,cursive;
+    color:#755656
+}
+/* it has default blue color so we need this to make it blend in our theme*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
