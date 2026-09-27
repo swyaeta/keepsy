@@ -10,11 +10,11 @@
 h2{
     font-size:66px;
     font-family:Satisfy,cursive;
-    color: #E89A9A;
+    color:#6a4d4d;
     text-align:center;
     margin-top:35px;
 }
-
+/* this to add bg colour in our main bg */
 body{
    background-color:#FFF3EE;
 }
@@ -30,26 +30,16 @@ a{
     color:inherit
 }
 
-.tape {
-    width: 100px;
-    min-height: 22px;
-    background-color: rgba(255, 252, 250, 0.75);
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    transform: rotate(-4deg);
-    border-radius:4px;
-}
-
+/* this is to go back to the index page */
 .abox {
     width:68px;
     min-height:58px;
-    background-color:#fdece9;
+    background-color: #ffd7d7;
     border-radius:4px;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.30);
     top:12%;
     left:5%;
-    border:3px solid #EFA3A3;
+    border:5px solid  #a88383;
     border-radius:20px;
     position:absolute;
     transition:0.3s;
@@ -60,19 +50,20 @@ a{
     font-family: Satisfy,cursive
 
 }
+/* this is to hover our go back button */
 .abox:hover{
     transform:translateY(-6px)
 }
-
+/* this is the outside txt box */
 .tbox {
     width:200px;
     min-height:80px;
-    background-color:#fdece9;
+    background-color: #f6d1d1;
     border-radius:4px;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.35);
     top:40%;
     left:70%;
-    border:3px solid #EFA3A3;
+    border:3px solid  #a88383;
     border-radius:20px;
     position:absolute;
     color: #7a5959;
@@ -80,11 +71,12 @@ a{
     transition:0.4s;
     transform: rotate(+5deg);
 }
+/* this is to hover the date box */
  .tbox:hover{
     transform:translate(-15px);
  }   
 
-
+/* this is to input date */
 .tbox input {
     width: 160px;
     height: 40px;
@@ -99,11 +91,12 @@ a{
     outline: none;
     text-align: center;
 }
-
+/* this makes the tbox move */
 .tbox button:hover{
    background-color:#a88383
 }    
 
+/* this is to give  scrapbook vibe basically to make it look like a tape is holding it */
 .tape {
     width: 100px;
     height: 22px;
@@ -114,14 +107,14 @@ a{
     transform: rotate(-4deg);
     border-radius:4px;
 }
-
+/* this the to write inside our sbox */
 .sbox input {
     width: 670px;
     height: 50px;
     padding: 10px 15px;
     top:11px;
     left:18px;
-    border:3px solid  #FFFCFA;
+    border:2px solid  #a88383;
     border-radius:20px;
     position:absolute;
     background-color: #FFFCFA;
@@ -133,37 +126,37 @@ a{
     text-align: center;
     
 }
-
+/* this is to write the title/ main highlight of the day */
 .sbox{
     position:absolute;
     top:65%;
     left:22%;
     width: 700px;
     min-height: 80px;
-    border:3px solid #EFA3A3;
+    border:3px solid #a88383;
     border-radius:20px;
-    background-color: #fdece9;
+    background-color: #f6d1d1
 }
-
+/* this is the bodybox to write the main writing */
 .bodybox{
     position:absolute;
-    top:156%;
+    top:165%;
     left:20%;
     width: 760px;
     min-height: 630px;
-    border:7px solid #EFA3A3;
+    border:3px solid #a88383;
     border-radius:20px;
-    background-color: #fdece9;
+    background-color: #f6d1d1;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.65)
 }
-
+/* this is the white text area inside our bodybox */
 .bodybox textarea {
     width: 720px;
     min-height: 580px;
     padding: 10px 15px;
     top:20px;
     left:17px;
-    border:2px solid #FFFCFA;
+    border:2px solid #a88383;
     border-radius:20px;
     position:absolute;
     background-color:  #FFFCFA;
@@ -172,11 +165,10 @@ a{
     color: #7a5959;
     outline: none;
     text-align: center;
-    resize:none;
-    
+    resize:none
 }
 
-
+/* this is to store the uploaded photo */
 .photobox {
     position: absolute;
     width: 250px;
@@ -190,9 +182,9 @@ a{
     transform:rotate(-5deg);
     transition:0.2s;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.30)
-    
 }
 
+/* this is to make sure the uploaded photo doesnot cover the whole screen */
 #imgpreview {
     width: 100%;
     height: 100%;
@@ -200,6 +192,7 @@ a{
     border-radius: 18px;
 }
 
+/* this is the button that is used to remove the photo that is uploaded */
 #removeimg {
     position: absolute;
     top: 5px;
@@ -212,14 +205,15 @@ a{
     color: #FFFCFA;
     cursor: pointer;
 }
+
+/* this is the button/box to add photos to our photobox */
  .orgphoto{
-    
     position:absolute;
     top:90%;
     left:28%;
     font-family:Satisfy,cursive;
     font-size:17px;
-    border: 2px solid #EFA3A3;
+    border: 2px dotted #EFA3A3;
     background-color: #fdece9 ;
     border-radius: 15px;
     width:200px;
@@ -228,13 +222,13 @@ a{
     font-family: Satisfy,cursive;
     color:#5A4141;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.30)
-
+ /* this is to make the photbox moves */
  }
  .photobox:hover{
     transform:translate(-6px)
  }
 
-
+/* this is the save button at the end that will send the data to our katch */
 #savebutton{
     width: 200px;
     min-height: 50px;
@@ -246,32 +240,72 @@ a{
     font-size: 30px;
     cursor: pointer;
     position:absolute;
-    top:280%;
-    left:45%;
+    top:290%;
+    left:42%;
     margin-top: 15px;
     transition:0.4s
 } 
 
-
+/* this is to change the colour of our save button */
 #savebutton:hover{
     background-color: #b08585
 }
-
+/* this is the bgtxt near the photo the user will upload */
 .bgtxt1{
     font-size:17px;
     font-family:Satisfy,cursive;
     position:absolute;
-    top:750px;
-    left:450px;
+    top:103%;
+    left:20%;
     color:#5A4141;
-    transform:rotate(-7deg)
+    transform:rotate(-12deg)
 }
+
+/* this is the bgtxt near the save button */
 .bgtxt2{
-    font-size:17px;
+    font-size:20px;
     font-family:Satisfy,cursive;
     position:absolute;
-    top:306%;
-    left:67%;
-    color:#5A4141;
+    top:303%;
+    left:60%;
+    color:#926262;
     transform:rotate(-7deg)
+}
+
+/* this for our 3rd bgtext near our bodybox */
+.bgtxt3{
+    font-size:14px;
+    font-family:Satisfy,cursive;
+    position:absolute;
+    top:159%;
+    left:70%;
+    color:#b35b5b;
+    transform:rotate(-3deg)
+}
+
+/*this is the 1st bg sticker that */
+.bgtxt4{
+    font-size:35px;
+    position:absolute;
+    top:32%;
+    left:89%;
+    transform:rotate(+12deg);
+    transition:0.4s
+/* this is make the 1st bird move */ 
+}
+.bgtxt4:hover{
+    transform:translateY(+9px)
+/* this is for our 2nd bird */
+}
+.bgtxt5{
+    font-size:30px;
+    position:absolute;
+    top:155%;
+    left:19%;
+    transform:rotate(-360deg);
+    transition:0.4s
+}
+/* this is to make the 2nd bird move */
+.bgtxt5:hover{
+    transform:translateY(+9px)
 }
