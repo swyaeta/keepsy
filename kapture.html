@@ -1,1 +1,80 @@
-heyy
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> kapture.com</title>
+<link rel="stylesheet" href="styles.css">
+ </head>
+<body>
+    <h2>Kapture</h2>
+    <p> kapture your day,your way</p>
+    <a href="index.html">
+    <div class= "abox"> Go Back⬅
+    <div class="tape"></div>
+    </div>   
+    </a>
+    <div class ="tbox">
+    <div class ="tape"></div>
+        <input
+            type="date"
+            id="date"
+            placeholder="Date"
+            required
+        >    
+    </div>
+
+        <div class ="sbox">
+        <div class="tape"></div>
+        <input  
+        type="text"
+        id="title"
+        placeholder="Title/Highlight of your day:) "
+        required
+        >
+        </div>
+
+
+     <div class="attachbox"> 
+      
+      <input 
+        type="file" 
+        id="photo" 
+        accept="image/*"
+        style="display:none;"
+       >
+       <label for="photo" class="orgphoto">
+       Add the photo of the day 📸[click on me (optional) ]
+       </label>
+       
+
+       <div class="photobox"> 
+        <div class="tape"></div>
+        <img id="imgpreview"> 
+        <button type="button" id="removeimg">✕</button> 
+       </div>
+       </div>
+
+        <div class=" bgtxt1">kuteee!!</div> 
+        <div class=" bgtxt2">Kapture it :))</div> 
+        
+        <div class ="bodybox">
+        <div class="tape"></div>
+        <textarea
+        type="text"
+        id="body"
+        placeholder="Write all about your day 📝 !!!!"
+        required
+        ></textarea>
+
+        </div>
+    
+      <div class ="savebox">  
+      <button type="submit" id="savebutton">
+          Save
+        </button>
+        </div>
+<script src="kapture.js"></script>
+
+</body>
+</html> 

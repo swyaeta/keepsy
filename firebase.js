@@ -1,0 +1,23 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+import {
+    getAuth,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
+import {
+    getFirestore
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAYyx09S8CnB3uah-V8HNRn1VxnV8ASXEo",
+    authDomain: "keepsy-9daf6.firebaseapp.com",
+    projectId: "keepsy-9daf6",
+    storageBucket: "keepsy-9daf6.firebasestorage.app",
+    messagingSenderId: "202099771927",
+    appId: "1:202099771927:web:64c32f5d0aa5566e08aa52"
+};
+
+const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export { onAuthStateChanged };

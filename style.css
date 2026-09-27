@@ -155,7 +155,4 @@ h3{
     color:#755656
 }
 /* it has default blue color so we need this to make it blend in our theme*/
-a{
-    text-decoration: none;
-    color: inherit;
-}
+
