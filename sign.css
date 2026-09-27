@@ -12,6 +12,7 @@
     color: #755656;
     text-align:center;
  }
+
 /*this is for the main heading*/
  h1{
     font-size: 58px;
@@ -20,13 +21,14 @@
     text-align:center;
     margin-top:26px;
  }
+
  p{
     font-family: Satisfy,cursive;
     color:#B97878;
     text-align:center;
     font-size:18px;
  }
- 
+ /* this is our main sign box */
 .sign-box{
     width: 430px;
     min-height:360px;
@@ -57,6 +59,7 @@
     transform: rotate(-4deg);
     border-radius:4px;
 }
+
 /* we have to use # here because its not a class, its a ID */
 #sign-form input {
     width: 300px;
@@ -71,11 +74,13 @@
     color: #5A4141;
     outline: none;
 }
+
 /* When you click inside an input */
 #sign-form input:focus {
     border-color:  #5A4141;
     color:#5c0404
 }
+
 /* the clickable signup button */
 #sign-form button {
     width: 300px;
@@ -93,17 +98,16 @@
     background-color: #614747;
 }
 
-
 h3{
     font-family: Satisfy,cursive;
     color:#B97878;
-   position:absolute;
-   top:380px;
-   left:80px;
-
-    font-size:17px;
+    position:absolute;
+    top:380px;
+    left:80px;
+    font-size:17px
  }
- /* this is for the actual bg of the page */
+
+ /* this is for the actual bg colour of the page */
 body {
     background-color: #FFF3EE;
 }
@@ -111,7 +115,7 @@ a{
     text-decoration:none;
     color:#826161
 }
-
+/* this is for the user to go back to indexpage */
 .abox {
     width:75px;
     height:60px;
@@ -131,6 +135,7 @@ a{
     font-size:16px;
     text-align:center
 }
+/* this to make abox moveee*/
 .abox:hover{
     transform:translateY(-6px);
 } 
@@ -143,6 +148,7 @@ a{
     color:#5A4141;
     transform:rotate(-7deg);
 }
+/* this is the book in the bg */
 .book{
     font-size:28px;
     position:absolute;
