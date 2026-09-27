@@ -112,6 +112,7 @@ h3{
     transform:rotate(-8deg);
     transition:0.5s;
 }
+/* this is to maek the 1st bgtxt move */
 .bgtxt1:hover{
     transform:translateY(-6px);
 }
@@ -126,6 +127,7 @@ h3{
     transform:rotate(+12deg);
     transition:0.5s;
 }
+/* this is to make the 2nd bgtxt moves */
 .bgtxt2:hover{
     transform:translateY(-6px);
 }
@@ -135,9 +137,8 @@ h3{
     transition:0.5s;
     position: absolute;
     top: 77%;
-    left: 92%;
-    transform:rotate(-10deg);
-
+    left: 90%;
+    transform:rotate(-10deg)
 }
 /* this is to hover the pen when it is touched */
 .pen:hover{
@@ -154,5 +155,4 @@ h3{
     font-family:Satisfy,cursive;
     color:#755656
 }
-/* it has default blue color so we need this to make it blend in our theme*/
 
