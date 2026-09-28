@@ -8,7 +8,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAYyx09S8CnB3uah-V8HNRn1VxnV8ASXEo",
+    apiKey: "cant share",
     authDomain: "keepsy-9daf6.firebaseapp.com",
     projectId: "keepsy-9daf6",
     storageBucket: "keepsy-9daf6.firebasestorage.app",
