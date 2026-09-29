@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> kapture.com</title>
 <link rel="stylesheet" href="styles.css">
  </head>
- 
+
 <body>
     <h2>Kapture</h2>
     <p> kapture your day,your way ❀ </p>
@@ -28,7 +29,7 @@
     </div>
      
         <div class ="sbox">
-        <div class="tape"></div>
+        <div class="stape"></div>
         <input  
         type="text"
         id="title"
@@ -36,48 +37,43 @@
         required
         >
         </div>
-
-     <div class="attachbox"> 
-      <input 
-        type="file" 
-        id="photo" 
-        accept="image/*"
-        style="display:none;"
-       >
-       <label for="photo" class="orgphoto">
-       Click on me to add the photo of the day 📸 (optional)
-       </label>
-       
-       <div class="photobox"> 
-        <div class="tape"></div>
-        <img id="imgpreview"> 
-        <button type="button" id="removeimg">✕</button> 
-       </div>
-       </div>
-
+>
+      
         <div class=" bgtxt1">kuteee!!</div> 
         <div class=" bgtxt2">little moments,big memories:)♡</div> 
         <div class=" bgtxt3">A Day To Remember ♡</div>
         <div class=" bgtxt4">🕊️</div>
         <div class=" bgtxt5">🕊️</div>
         
+     <div class="musicbox">
+       <div class="tape"></div>
+       <h3>Choose your vibe ♡</h3>
+       <button type="button" id="soft">Soft</button>
+       <button type="button" id="mood">Mood</button>
+        <button type="button" id="cozy">Cozy</button>
+        <button type="button" id="calm">Calm</button>
+        <button type="button" id="beast">Beast</button>
+        <button type="button" id="beast">Minimal</button>
+        <audio id="musicplayer"></audio>
+      </div>
+
+
         <div class ="bodybox">
-        <div class="tape"></div>
+        <div class="btape"></div>
         <textarea
         type="text"
         id="body"
         placeholder="Write all about your day 📝 !!!!"
         required
         ></textarea>
-
         </div>
-    
+      
       <div class ="savebox">  
       <button type="submit" id="savebutton">
           Save
         </button>
         </div>
-<script src="kapture.js"></script>
+<script type="module" src="kapture.js"></script>
 
 </body>
 </html> 
