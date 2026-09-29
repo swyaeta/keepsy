@@ -1,14 +1,21 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+
 import {
     getAuth,
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
+
 import {
     getFirestore
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
+import {
+    getStorage
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-storage.js";
+
+
 const firebaseConfig = {
-    apiKey: "cant share",
+    apiKey: "AIzaSyAYyx09S8CnB3uah-V8HNRn1VxnV8ASXEo",
     authDomain: "keepsy-9daf6.firebaseapp.com",
     projectId: "keepsy-9daf6",
     storageBucket: "keepsy-9daf6.firebasestorage.app",
@@ -20,4 +27,5 @@ const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-export { onAuthStateChanged };
+export const storage = getStorage(app);
+export { onAuthStateChanged }; 

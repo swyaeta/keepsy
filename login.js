@@ -22,8 +22,7 @@ form.addEventListener("submit", async (e) => {
         error.textContent = "Incorrect email or password.";
     }
 });
-
-
+ 
 forgot.addEventListener("click", async (e) => {
     e.preventDefault();
 
