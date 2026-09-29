@@ -21,10 +21,11 @@ body{
 
 p{
     font-family: Satisfy,cursive;
-    color:#B97878;
+    color:#de6e6e;
     text-align:center;
     font-size:20px;
 }
+/* this for the link to blend in our box */
 a{
     text-decoration:none;
     color:inherit
@@ -50,11 +51,11 @@ a{
     font-family: Satisfy,cursive
 
 }
-/* this is to hover our go back button */
+/* this is to move the go back button */
 .abox:hover{
     transform:translateY(-6px)
 }
-/* this is the outside txt box */
+/* this is the box in which there is date */
 .tbox {
     width:200px;
     min-height:80px;
@@ -107,7 +108,7 @@ a{
     transform: rotate(-4deg);
     border-radius:4px;
 }
-/* this the to write inside our sbox */
+/* this the to write title inside our sbox */
 .sbox input {
     width: 670px;
     height: 50px;
@@ -120,12 +121,13 @@ a{
     background-color: #FFFCFA;
     font-family: Satisfy, cursive;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.35);
-    font-size: 26px;
+    font-size: 23px;
     color: #7a5959;
     outline: none;
     text-align: center;
     
 }
+
 /* this is to write the title/ main highlight of the day */
 .sbox{
     position:absolute;
@@ -137,98 +139,41 @@ a{
     border-radius:20px;
     background-color: #f6d1d1
 }
+
 /* this is the bodybox to write the main writing */
 .bodybox{
     position:absolute;
-    top:165%;
+    top:150%;
     left:20%;
-    width: 760px;
-    min-height: 630px;
+    width: 780px;
+    min-height: 730px;
     border:3px solid #a88383;
     border-radius:20px;
     background-color: #f6d1d1;
     box-shadow: 0 4px 10px rgba(90, 65, 65, 0.65)
 }
+
 /* this is the white text area inside our bodybox */
 .bodybox textarea {
-    width: 720px;
-    min-height: 580px;
+    width: 750px;
+    min-height: 690px;
     padding: 10px 15px;
     top:20px;
-    left:17px;
+    left:14px;
     border:2px solid #a88383;
     border-radius:20px;
     position:absolute;
     background-color:  #FFFCFA;
     font-family: Satisfy, cursive;
-    font-size: 24px;
+    font-size: 21px;
     color: #7a5959;
     outline: none;
     text-align: center;
     resize:none
 }
 
-/* this is to store the uploaded photo */
-.photobox {
-    position: absolute;
-    width: 250px;
-    min-height: 200px;
-    margin-top: 15px;
-    border: 4px dashed #EFA3A3;
-    border-radius: 20px;
-    background-color: #FFFCFA;
-    top:105%;
-    left:25%;
-    transform:rotate(-5deg);
-    transition:0.2s;
-    box-shadow: 0 4px 10px rgba(90, 65, 65, 0.30)
-}
 
-/* this is to make sure the uploaded photo doesnot cover the whole screen */
-#imgpreview {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 18px;
-}
-
-/* this is the button that is used to remove the photo that is uploaded */
-#removeimg {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 28px;
-    height: 28px;
-    border: none;
-    border-radius: 50%;
-    background-color: #b78e8e;
-    color: #FFFCFA;
-    cursor: pointer;
-}
-
-/* this is the button/box to add photos to our photobox */
- .orgphoto{
-    position:absolute;
-    top:90%;
-    left:28%;
-    font-family:Satisfy,cursive;
-    font-size:17px;
-    border: 2px dotted #EFA3A3;
-    background-color: #fdece9 ;
-    border-radius: 15px;
-    width:200px;
-    min-height:36px;
-    text-align: center;
-    font-family: Satisfy,cursive;
-    color:#5A4141;
-    box-shadow: 0 4px 10px rgba(90, 65, 65, 0.30)
- /* this is to make the photbox moves */
- }
- .photobox:hover{
-    transform:translate(-6px)
- }
-
-/* this is the save button at the end that will send the data to our katch */
+/* this is the save button at the end that will send the data to our katch to store it !!!*/
 #savebutton{
     width: 200px;
     min-height: 50px;
@@ -240,7 +185,7 @@ a{
     font-size: 30px;
     cursor: pointer;
     position:absolute;
-    top:290%;
+    top:300%;
     left:42%;
     margin-top: 15px;
     transition:0.4s
@@ -250,23 +195,23 @@ a{
 #savebutton:hover{
     background-color: #b08585
 }
-/* this is the bgtxt near the photo the user will upload */
+/* this is the bgtxt near the music the user will upload */
 .bgtxt1{
     font-size:17px;
     font-family:Satisfy,cursive;
     position:absolute;
-    top:103%;
-    left:20%;
+    top:121%;
+    left:45%;
     color:#5A4141;
     transform:rotate(-12deg)
 }
 
 /* this is the bgtxt near the save button */
 .bgtxt2{
-    font-size:20px;
+    font-size:16px;
     font-family:Satisfy,cursive;
     position:absolute;
-    top:303%;
+    top:290%;
     left:60%;
     color:#926262;
     transform:rotate(-7deg)
@@ -277,10 +222,10 @@ a{
     font-size:14px;
     font-family:Satisfy,cursive;
     position:absolute;
-    top:159%;
+    top:126%;
     left:70%;
     color:#b35b5b;
-    transform:rotate(-3deg)
+    transform:rotate(-6deg)
 }
 
 /*this is the 1st bg sticker that */
@@ -295,17 +240,87 @@ a{
 }
 .bgtxt4:hover{
     transform:translateY(+9px)
-/* this is for our 2nd bird */
 }
+/* this is for our 2nd bird */
 .bgtxt5{
     font-size:30px;
     position:absolute;
-    top:155%;
-    left:19%;
+    top:121%;
+    left:17%;
     transform:rotate(-360deg);
     transition:0.4s
 }
 /* this is to make the 2nd bird move */
 .bgtxt5:hover{
     transform:translateY(+9px)
+}
+/* this is the music box */
+.musicbox {
+    position: absolute;
+    top: 93%;
+    left: 22%;
+    width: 245px;
+    height: 230px;
+    padding: 25px;
+    background-color: #f6d1d1;
+    border: 5px dashed #ef9191;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(90, 65, 65, 0.40);
+    text-align: center;
+    transform:rotate(-6deg)
+    
+}
+
+.musicbox:hover{
+    transform:translate(-6px)
+}
+
+/* this is the heading in the music box */
+.musicbox h3 {
+    font-family: Satisfy, cursive;
+    font-size: 20px;
+    color: #6a4d4d;
+    margin-top: -10px;
+}
+
+/* these are the music buttons */
+.musicbox button {
+    border: 2px solid  #a88383;
+    border-radius: 15px;
+    background-color: #FFFCFA;
+    color: #5A4141;
+    font-family: Satisfy, cursive;
+    font-size: 18px;
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* to move the music button when they are touched */
+.musicbox button:hover {
+    background-color: #f8edeb;
+    
+}
+/* this is the tape for the main bodybox*/
+.btape {
+    width: 350px;
+    height: 23px;
+    background-color: rgba(255, 252, 250, 0.75);
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    transform: rotate(-2deg);
+    border-radius:4px
+}
+/* this is the tape for the title/highlight box */
+.stape {
+    width: 230px;
+    height: 23px;
+    background-color: rgba(255, 252, 250, 0.75);
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    transform: rotate(-3deg);
+    border-radius:4px
 }
