@@ -1,0 +1,68 @@
+/* this is to add the font i want in our website*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*this for reset of the default css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF3EE;
+    color: #5A4141;
+    text-align: center;
+    font-family:Satisfy,cursive;
+}
+
+h1 {
+    color: #6a4d4d;
+    font-size: 60px;
+    font-family:Satisfy,cursive;
+}
+p{
+    color:#de6e6e;
+    font-size:20px;
+    font-family:Satisfy,cursive
+}
+
+
+#memorylist {
+    margin: 50px auto
+}
+
+.memory {
+    background-color: #fee3e3;
+    border: 4px dashed #f69898;
+    box-shadow: 0 4px 10px rgba(90, 65, 65, 0.30);
+    border-radius: 29px;
+    padding: 20px;
+    margin-top: 100px;
+    width:500px;
+    height:100px;
+    margin: 100px auto 0;
+    position: relative
+}
+.memory::before{
+content:"";
+width:80px;
+height:30px;
+display:block;
+background-color: rgba(255, 252, 250, 0.75);
+transform:rotate(-7deg);
+position: absolute;
+top:-10px;
+left:30px;
+box-shadow:0px 4px 10px rgba(90, 65, 65, 0.30)
+}
+
+.memory h2 {
+    color: #649d6e;
+    
+}
+
+.memory p {
+    color: #8c6161;
+    font-size: 20px;
+}
+
