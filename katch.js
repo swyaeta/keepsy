@@ -16,23 +16,28 @@ auth.onAuthStateChanged(async (user) => {
         return;
     }
 
+
     const memoriesSnapshot = await getDocs(
         collection(db, "memories")
     );
 
+
     const memories = [];
+
 
     memoriesSnapshot.forEach((doc) => {
 
         const data = doc.data();
 
         if (data.userId === user.uid) {
+
             memories.push({
                 id: doc.id,
                 date: data.date,
                 title: data.title,
                 body: data.body
             });
+
         }
 
     });
@@ -53,6 +58,14 @@ auth.onAuthStateChanged(async (user) => {
             <h2>${memory.date}</h2>
             <p>${memory.title}</p>
         `;
+
+
+        memoryBox.addEventListener("click", () => {
+
+            window.location.href = `katch2.html?id=${memory.id}`;
+
+        });
+
 
         memoryList.appendChild(memoryBox);
 
