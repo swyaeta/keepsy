@@ -45,21 +45,47 @@ auth.onAuthStateChanged(async (user) => {
         memory.body;
 });
 
-const music = document.getElementById("music");
-const musicSelect = document.getElementById("music-select");
-const musicButton = document.getElementById("music-button");
+const musicPlayer = document.getElementById("musicplayer");
 
-musicSelect.addEventListener("change", () => {
-    music.src = musicSelect.value;
+const soft = document.getElementById("soft");
+const mood = document.getElementById("mood");
+const cozy = document.getElementById("cozy");
+const calm = document.getElementById("calm");
+const beast = document.getElementById("beast");
+const minimal = document.getElementById("minimal");
+
+
+soft.addEventListener("click", () => {
+    musicPlayer.src = "music/soft.mp3";
+    musicPlayer.play();
 });
 
-musicButton.addEventListener("click", () => {
-    if (music.paused) {
 
-        music.play();
-        musicButton.textContent = "❚❚ Pause";
-    } else {
-        music.pause();
-        musicButton.textContent = "▶ Play";
-    }
+mood.addEventListener("click", () => {
+    musicPlayer.src = "music/mood.mp3";
+    musicPlayer.play();
+});
+
+
+cozy.addEventListener("click", () => {
+    musicPlayer.src = "music/cozy.mp3";
+    musicPlayer.play();
+});
+
+
+calm.addEventListener("click", () => {
+    musicPlayer.src = "music/calm.mp3";
+    musicPlayer.play();
+});
+
+
+beast.addEventListener("click", () => {
+    musicPlayer.src = "music/beast.mp3";
+    musicPlayer.play();
+});
+
+
+minimal.addEventListener("click", () => {
+    musicPlayer.src = "music/minimal.mp3";
+    musicPlayer.play();
 });

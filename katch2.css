@@ -16,8 +16,8 @@ body{
 /* this is for my heading*/
 h1{
     font-family:Satisfy,cursive;
-    font-size:60px;
-    margin-top:60px;
+    font-size:70px;
+    margin-top:40px;
     color:#6a4d4d;
 }
 /* this is to make my link blend in*/
@@ -29,7 +29,7 @@ a{
 p{
     font-family:Satisfy,cursive;
     color:#e670a5b3;
-    font-size:18px; 
+    font-size:22px; 
     
 }
 /* bg  txts*/
@@ -45,13 +45,28 @@ p{
 }
  .bgtxt2{
     font-family:Satisfy,cursive;
-    font-size:10px;
-    color:#ba5757;
+    font-size:19px;
+    color:#9c2626;
     position:absolute;
-    top:280px;
-    left:40px;
+    top:2000px;
+    left:460px;
     transform:rotate(-7deg)
  }
+/* bird in the bg */
+.bgtxt3{
+    font-size:35px;
+    position:absolute;
+    top:273px;;
+    left:389px;
+    transform:rotate(+12deg);
+    transition:0.4s
+/* this is make the 1st bird move */ 
+}
+.bgtxt3:hover{
+    transform:translateY(+9px)
+}
+
+
  /* this is to go back to the indexpage*/
  .gobox{
     font-family:Satisfy,cursive;
@@ -64,7 +79,7 @@ p{
     border: 4px solid #9a6e6e;
     border-radius:15px;
    box-shadow:0 4px 10px rgba(255, 252, 250, 0.35);
-   background-color:#fee3e3;
+   background-color:#f6d1d1;
    transform:rotate(-13deg);
    text-align:center;
   
@@ -84,33 +99,118 @@ p{
 }
 
 .memory {
-    width: 800px;
-    height: 1000px;
-    background-color: #fee3e3;
-    border: 4px solid #a88383;
+    width: 873px;
+    height: 1250px;
+    background-color:#f6d1d1;
+    border: 12px double #a88383;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(106, 77, 77, 0.20);
     color: #6a4d4d;
     position:absolute;
-    top:600px;
-    left:217px;
+    top:690px;
+    left:179px;
 
-}
-
-#memory-date {
-    font-size: 15px;
-    color: #ba5757;
-    margin-bottom: 10px;
 }
 
 #memory-title {
-    font-size: 28px;
-    color: #6a4d4d;
-    margin-bottom: 15px;
+    font-size: 30px;
+    color: #9d4a4a;
+    margin-top: 10px;
 }
 
 #memory-body {
     font-family: Satisfy, cursive;
+    font-size: 23px;
+    margin-top:33px;
+    color:#452b2b
+}
+
+.musicbox{
+   position: absolute;
+    top: 339px;;
+    left: 190px;
+    width: 245px;
+    height: 230px;
+    padding: 25px;
+    background-color: #f6d1d1;
+    border: 6px dashed #ef9191;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(90, 65, 65, 0.40);
+    text-align: center;
+    transform:rotate(-6deg)
+}
+
+.musicbox:hover{
+    transform:translate(-6px)
+}
+
+/* this is the heading in the music box */
+.musicbox h3 {
+    font-family: Satisfy, cursive;
+    font-size: 20px;
+    color: #6a4d4d;
+    margin-top: -10px;
+}
+
+/* these are the music buttons */
+.musicbox button {
+    border: 2px solid  #a88383;
+    border-radius: 15px;
+    background-color: #FFFCFA;
+    color: #5A4141;
+    font-family: Satisfy, cursive;
     font-size: 18px;
-    line-height: 1.6; 
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* to move the music button when they are touched */
+.musicbox button:hover {
+    background-color: #f8edeb;
+}
+
+.musicbox::before{
+    content:"";
+    display:block;
+    width:120px;
+    height:24px;
+    background-color:rgba(255, 252, 250, 0.65);
+   position:absolute;
+   top: -18px;
+   left:96px
+}
+.memorydate{
+    width: 190px;
+    height: 80px;
+    background-color:#f4dcdc;
+    border: 4px dashed #ef9191;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(106, 77, 77, 0.20);
+    position:relative;
+    margin:520px 780px;
+    transition:0.2s;
+    transform:rotate(-7deg)
+    
+}
+#memory-date{
+    font-family:Satisfy,cursive;
+    font-size:27px;
+    color:#4e894e;
+    margin-top:22px
+}
+
+.memorydate::before{
+    content:"";
+    display:block;
+    width:120px;
+    height:24px;
+    background-color:rgba(255, 252, 250, 0.65);
+   position:absolute;
+   top: -18px;
+   left:35px
+}
+.memorydate:hover{
+    transform:translate(-7px)
 }
