@@ -2,12 +2,13 @@ import { db, auth } from "./firebase.js";
 
 import {
     collection,
-    getDocs
+    getDocs,
+    query,
+    where
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
 
 const memoryList = document.getElementById("memorylist");
-
 
 auth.onAuthStateChanged(async (user) => {
 
@@ -16,42 +17,32 @@ auth.onAuthStateChanged(async (user) => {
         return;
     }
 
-
-    const memoriesSnapshot = await getDocs(
-        collection(db, "memories")
+    const memoriesQuery = query(
+        collection(db, "memories"),
+        where("userId", "==", user.uid)
     );
 
+    const memoriesSnapshot = await getDocs(memoriesQuery);
 
     const memories = [];
 
-
     memoriesSnapshot.forEach((doc) => {
-
         const data = doc.data();
 
-        if (data.userId === user.uid) {
-
-            memories.push({
-                id: doc.id,
-                date: data.date,
-                title: data.title,
-                body: data.body
-            });
-
-        }
-
+        memories.push({
+            id: doc.id,
+            date: data.date,
+            title: data.title,
+            body: data.body
+        });
     });
-
 
     memories.sort((a, b) => {
         return a.date.localeCompare(b.date);
     });
 
-
     memories.forEach((memory) => {
-
         const memoryBox = document.createElement("div");
-
         memoryBox.className = "memory";
 
         memoryBox.innerHTML = `
@@ -59,16 +50,10 @@ auth.onAuthStateChanged(async (user) => {
             <p>${memory.title}</p>
         `;
 
-
         memoryBox.addEventListener("click", () => {
-
             window.location.href = `katch2.html?id=${memory.id}`;
-
         });
 
-
         memoryList.appendChild(memoryBox);
-
     });
-
 });
