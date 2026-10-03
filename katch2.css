@@ -60,8 +60,8 @@ p{
     left:389px;
     transform:rotate(+12deg);
     transition:0.4s
-/* this is make the 1st bird move */ 
 }
+/* this is make the 1st bird move */ 
 .bgtxt3:hover{
     transform:translateY(+9px)
 }
@@ -98,6 +98,7 @@ p{
    left:26px
 }
 
+/* this is the main big box showiong the data */
 .memory {
     width: 873px;
     height: 1250px;
@@ -125,6 +126,7 @@ p{
     color:#452b2b
 }
 
+/* this for u go listen the music*/
 .musicbox{
    position: absolute;
     top: 339px;;
@@ -181,6 +183,7 @@ p{
    top: -18px;
    left:96px
 }
+/* i didnt want the date in the same one so yea i made this new box */
 .memorydate{
     width: 190px;
     height: 80px;
@@ -201,6 +204,7 @@ p{
     margin-top:22px
 }
 
+/* this is to add tape */
 .memorydate::before{
     content:"";
     display:block;
@@ -211,6 +215,7 @@ p{
    top: -18px;
    left:35px
 }
+/* this is to move it */
 .memorydate:hover{
     transform:translate(-7px)
 }

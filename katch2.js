@@ -60,30 +60,25 @@ soft.addEventListener("click", () => {
     musicPlayer.play();
 });
 
-
 mood.addEventListener("click", () => {
     musicPlayer.src = "music/mood.mp3";
     musicPlayer.play();
 });
-
 
 cozy.addEventListener("click", () => {
     musicPlayer.src = "music/cozy.mp3";
     musicPlayer.play();
 });
 
-
 calm.addEventListener("click", () => {
     musicPlayer.src = "music/calm.mp3";
     musicPlayer.play();
 });
 
-
 beast.addEventListener("click", () => {
     musicPlayer.src = "music/beast.mp3";
     musicPlayer.play();
 });
-
 
 minimal.addEventListener("click", () => {
     musicPlayer.src = "music/minimal.mp3";
