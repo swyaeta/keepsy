@@ -23,8 +23,21 @@ Katch is to read your memories and relive it
 So, to store your memories and give you privacy 
 Ther is login/signup page that checks your id and does authentication
 
-#####LOGIN img : <img width="1916" height="882" alt="Screenshot (1463)" src="https://github.com/user-attachments/assets/673fd912-5776-48f3-8eaf-0b146b2c141a" />
-##### SIGNUP img : <img width="1868" height="877" alt="Screenshot (1464)" src="https://github.com/user-attachments/assets/4ea69ed0-0b8b-457b-86be-56580be1fd59" />
+#####LOGIN img :
+
+<img width="1916" height="882" alt="Screenshot (1463)" src="https://github.com/user-attachments/assets/673fd912-5776-48f3-8eaf-0b146b2c141a" />
+
+
+##### SIGNUP img :
+<img width="1868" height="877" alt="Screenshot (1464)" src="https://github.com/user-attachments/assets/4ea69ed0-0b8b-457b-86be-56580be1fd59" />
+
+Then we have the main kapture page 
+there you store your info and you also listen to music 
+
+##KAPTURE vdo:
+https://github.com/user-attachments/assets/a399f321-cdb5-4e7b-9e8b-0875ce7a3a75
+
+
 
 
 
