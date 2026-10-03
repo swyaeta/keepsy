@@ -1,2 +1,3 @@
-# keepsy
-This is a memory dump/ online diary website made with html,css and js. The data is stored through firebase and firestore
+#KEEPSY
+Hey everyone!! 
+This is keepsy it is a online diary/memory dump website that kaptures your memories and help u relive it
