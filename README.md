@@ -51,16 +51,29 @@ After saving a memory in Kapture, it can be viewed in Katch, where you can read 
 
 The goal of Katch is to make your memories feel like a little personal scrapbook instead of just a list of saved text.
 
-##Katch img :
+### Katch img 1 :
+<img width="1777" height="796" alt="Screenshot (1465)" src="https://github.com/user-attachments/assets/023f7dc1-213a-40c5-a6ef-b2bc8ab9a25d" />
 
-### Built with
+### Katch 2 img :
+####First one :
+<img width="1810" height="816" alt="Screenshot (1466)" src="https://github.com/user-attachments/assets/be1f7654-9559-4aaa-a12a-07cb22a48e05" />
 
-* HTML
-* CSS
-* JavaScript
-* Firebase Authentication
-* Firebase Firestore
+####Second img :
+<img width="1849" height="792" alt="Screenshot (1467)" src="https://github.com/user-attachments/assets/91a73a4a-952a-464b-a3f0-93a5320ec2d3" />
+
+
+
+### It was built with:
+
+HTML
+CSS
+ JavaScript
+ Firebase Authentication
+ Firebase Firestore
 
 ## Why I made it
 
 I wanted to make a simple online diary that feels more personal and fun than a normal notes app. Keepsy is basically a little digital scrapbook for keeping the moments you don't want to forget. ♡
+
+
+
