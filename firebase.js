@@ -15,7 +15,7 @@ import {
 
 
 const firebaseConfig = {
-    apiKey: "",
+    apiKey: "AIzaSyAYyx09S8CnB3uah-V8HNRn1VxnV8ASXEo",
     authDomain: "keepsy-9daf6.firebaseapp.com",
     projectId: "keepsy-9daf6",
     storageBucket: "keepsy-9daf6.firebasestorage.app",
